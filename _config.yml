@@ -4,7 +4,7 @@ description: "Academic personal website"
 
 # GitHub Pages settings — leave both blank for now.
 # We'll fill these in together in the final "deployment" step.
-url: ""
+url: "https://lara-koehler.github.io"
 baseurl: ""
 
 # ── Navigation ───────────────────────────────────────────────────
