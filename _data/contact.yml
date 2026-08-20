@@ -1,0 +1,27 @@
+# ── Contact page content ─────────────────────────────────────────
+# Leave any field blank/absent to hide that part of the page.
+# See CONTENT_GUIDE.md for full instructions.
+
+email: "lkoehler [you_guess] pks [dot] mpg [dot] de"
+
+# Add, remove, or reorder affiliations freely — each one gets its own
+# institution name and address.
+affiliations:
+  - institution: "Max Planck Institute for the Physics of Complex Systems (MPI-PKS)"
+    address: |
+      Nöthnitzer Straße 38
+      01187 Dresden
+      Germany
+
+  - institution: "Physics of Life, TU Dresden"
+    address: |
+      PoL | Physics of Life
+      Arnoldstraße 18
+      01307 Dresden
+      Germany
+
+#links:
+#  - label: "Google Scholar"
+#    url: "https://scholar.google.com/citations?user=XXXXXXX"
+#  - label: "ORCID"
+#    url: "https://orcid.org/0000-0000-0000-0000"

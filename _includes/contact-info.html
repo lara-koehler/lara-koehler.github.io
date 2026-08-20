@@ -1,0 +1,33 @@
+{% assign contact = site.data.contact %}
+<div class="contact-info">
+  {% if contact.email %}
+    {% if contact.email contains "@" %}
+    <p><strong>Email:</strong> <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+    {% else %}
+    <p><strong>Email:</strong> {{ contact.email }}</p>
+    {% endif %}
+  {% endif %}
+
+  {% if contact.affiliations %}
+  <div class="contact-affiliations">
+    {% for aff in contact.affiliations %}
+    <div class="contact-affiliation">
+      {% if aff.institution %}
+      <p class="contact-institution"><strong>{{ aff.institution }}</strong></p>
+      {% endif %}
+      {% if aff.address %}
+      <p class="contact-address">{{ aff.address | newline_to_br }}</p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if contact.links %}
+  <ul class="social-links contact-links">
+    {% for link in contact.links %}
+    <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>

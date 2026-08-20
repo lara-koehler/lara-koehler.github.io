@@ -1,0 +1,72 @@
+# ── Publications ─────────────────────────────────────────────────
+# One entry per publication. Add, remove, or reorder freely — they're
+# automatically sorted by year (newest first) on the page, so the
+# order here doesn't matter.
+# See CONTENT_GUIDE.md for full instructions.
+
+- title: "How Do Particles with Complex Interactions Self-Assemble?"
+  authors: "Lara Koehler, Pierre Ronceray, Martin Lenz"
+  venue: "Phys. Rev. X"
+  year: 2024
+  links:
+    - label: "PDF"
+      url: "https://journals.aps.org/prx/pdf/10.1103/PhysRevX.14.041061"
+    - label: "DOI"
+      url: "https://doi.org/10.1103/PhysRevX.14.041061"
+
+- title: "Direct thermo-optical tuning of silicon microresonators for the mid-infrared"
+  authors: "Lara Koehler*, Paul Chevalier*, E. Shim, B. Desiatov, A. Shams-Ansari, M. Piccardo, Y. Okawachi, M. Yu, M. Loncar, M. Lipson, A. L. Gaeta, and F. Capasso"
+  venue: "Optics Express"
+  year: 2018
+  links:
+    - label: "PDF"
+      url: "https://opg.optica.org/directpdfaccess/16d9b7eb-8ba6-4873-bda917a599bee14b_403390/oe-26-26-34965.pdf?da=1&id=403390&seq=0&mobile=no"
+    - label: "DOI"
+      url: "https://doi.org/10.1364/OE.26.034965"
+
+
+
+
+
+# type: preprint puts an entry in the "Preprints" section instead of
+# "Publications" — leave `type` out entirely for a normal publication.
+- title: "Flow-wave coupling synchronizes oscillations in growing active matter"
+  authors: "Lara Koehler*, Elissavet Sandaltzopoulou*, Frank Jülicher, Jan Brugués"
+  venue: "arXiv"
+  year: 2026
+  type: preprint
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2601.05907"
+
+
+- title: "Passive memory reshapes active persistence"
+  authors: "Lara Koehler*, Ivan Di Terlizzi*, John D. Treado*"
+  venue: "arXiv"
+  year: 2026
+  type: preprint
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2605.29162"
+      
+
+- title: "Topological defect engineering enables size and shape control in self-assembly"
+  authors: "Lara Koehler*, Markus Eder*, Vincent Ouazan-Reboul, Christoph Karfusehr, Andrey Zelenskiy, Pierre Ronceray, Friedrich C. Simmel, Martin Lenz"
+  venue: "arXiv"
+  year: 2025
+  type: preprint
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2504.13073"
+
+
+
+- title: "Transient contacts between filaments impart its elasticity to branched actin"
+  authors: "Mehdi Bouzid, Cesar Valencia Gallardo, Magdalena Kopec, Lara Koehler, Giuseppe Foffi, Olivia du Roure, Julien Heuvingh, Martin Lenz"
+  venue: "arXiv"
+  year: 2024
+  type: preprint
+  links:
+    - label: "arXiv"
+      url: "https://arxiv.org/abs/2409.00549"
+

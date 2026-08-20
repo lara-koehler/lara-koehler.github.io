@@ -1,0 +1,49 @@
+# ── Site identity ────────────────────────────────────────────────
+title: "Lara Koehler"
+description: "Academic personal website"
+
+# GitHub Pages settings — leave both blank for now.
+# We'll fill these in together in the final "deployment" step.
+url: ""
+baseurl: ""
+
+# ── Navigation ───────────────────────────────────────────────────
+# Reorder or rename these and the nav bar updates automatically —
+# no HTML editing needed.
+nav:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Publications
+    url: /publications/
+  - title: Contact
+    url: /contact/
+
+# ── Jekyll internals ─────────────────────────────────────────────
+markdown: kramdown
+
+# The "projects" collection = one file per research project in
+# _projects/. output: false means each project is pure data (no
+# individual page of its own) — they're only rendered as cards on
+# the Research page.
+collections:
+  projects:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      order: 0
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CONTENT_GUIDE.md
+  - README.md

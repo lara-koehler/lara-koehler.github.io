@@ -1,0 +1,38 @@
+# ── Home page content ───────────────────────────────────────────
+# Edit the values below — nothing here is HTML, just plain text and
+# file names. See CONTENT_GUIDE.md for full instructions.
+
+name: "Lara Koehler"
+tagline: "Postdoctoral Researcher in biophysics, TU Dresden"
+
+# A short bio. Plain text or basic Markdown (e.g. **bold**, links) works.
+bio: >
+  I am a theoretical and numerical physicist working at the interface between soft matter physics and biology, with a
+  focus on collective phenomena and self-organization in active systems driven by internal biochemical cycles, growth,
+  and division rather than persistent self-propulsion. My research aims to identify the minimal physical mechanisms
+  that underlie complex biological dynamics, using tools from statistical physics, dynamical systems, and active
+  matter. A central theme of my work is to understand how local interactions and constraints give rise to robust,
+  large-scale organization in systems composed of many interacting units.
+
+# Filename only — the file itself goes in assets/images/.
+photo: "photo2.jpg"
+
+# Background image shown behind the header text.
+# opacity: 0 = invisible, 1 = fully solid. Tune to taste.
+background:
+  image: "scan_snapshots.png"
+  opacity: 0.22
+
+# Add, remove, or reorder freely. `label` is the link text, `url` is
+# where it goes. Use "mailto:you@example.com" for email.
+links:
+  #- label: "Email"
+   # url: "mailto:you@example.com"
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/citations?user=_g7TM8gAAAAJ&hl=en"
+  - label: "ORCID"
+    url: "https://orcid.org/0000-0002-4312-0104"
+  - label: "GitHub"
+    url: "https://github.com/lara-koehler"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/lara-koehler-phd-267926172/"

@@ -1,0 +1,46 @@
+<article class="project-card">
+  {% if project.image %}
+  <img class="project-image"
+       src="{{ '/assets/images/' | append: project.image | relative_url }}"
+       alt="{{ project.title }}"
+       style="width: {{ project.image_width | default: 100 }}%;">
+  {% endif %}
+
+  <h2 class="project-title">{{ project.title }}</h2>
+
+  <div class="project-description">
+    {{ project.content }}
+  </div>
+
+  {% if project.collaborators %}
+  <p class="project-collaborators">
+    Collaborators:
+    {% for person in project.collaborators %}{% if person.url %}<a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
+  </p>
+  {% endif %}
+
+  {% if project.publications %}
+  <ul class="project-publications">
+    {% for pub in project.publications %}
+    <li><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.label | default: "Read the paper" }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if project.video.type == "youtube" %}
+  <div class="project-video">
+    <iframe src="https://www.youtube.com/embed/{{ project.video.id }}"
+            title="{{ project.title }} video"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy"></iframe>
+  </div>
+  {% elsif project.video.type == "local" %}
+  <div class="project-video">
+    <video controls preload="metadata">
+      <source src="{{ '/assets/videos/' | append: project.video.file | relative_url }}" type="video/mp4">
+      Your browser doesn't support embedded video.
+    </video>
+  </div>
+  {% endif %}
+</article>

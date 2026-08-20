@@ -1,0 +1,344 @@
+/* ────────────────────────────────────────────────────────────────
+   Base styles. Everything visual lives in this one file.
+   Colors and spacing are defined once below as variables — change
+   a value here and it updates everywhere it's used.
+   ──────────────────────────────────────────────────────────────── */
+
+:root {
+  --color-text: #222222;
+  --color-text-muted: #666666;
+  --color-bg: #ffffff;
+  --color-accent: #1a4d8f;
+  --color-border: #e5e5e5;
+
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+
+  --content-width: 760px;
+  --spacing: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.3;
+}
+
+.wrap {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+/* ── Header / nav ─────────────────────────────────────────────── */
+
+.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.25rem 0;
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  color: var(--color-text-muted);
+}
+
+.site-nav a.active,
+.site-nav a:hover {
+  color: var(--color-text);
+}
+
+/* ── Main content ─────────────────────────────────────────────── */
+
+.page-content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+  min-height: 60vh;
+}
+
+/* ── Footer ───────────────────────────────────────────────────── */
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* ── Home page hero ───────────────────────────────────────────── */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 4rem 0 3.5rem;
+  aspect-ratio: 12 / 12;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  margin: 0.25rem 0 0;
+  font-size: 2rem;
+}
+
+.tagline {
+  color: var(--color-text-muted);
+  margin: 0.4rem 0 0;
+}
+
+.bio {
+  max-width: 560px;
+  margin: 1.75rem auto 0;
+  text-align: left;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 1.75rem 0 0;
+}
+
+.social-links a {
+  display: inline-block;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.social-links a:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* ── Research page: project cards ────────────────────────────── */
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-card {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 3rem;
+}
+
+.project-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.project-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 0 auto 1.25rem;
+}
+
+.project-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.project-description {
+  margin-bottom: 0.75rem;
+}
+
+.project-collaborators {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.project-publications {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.project-publications li + li {
+  margin-top: 0.35rem;
+}
+
+.project-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 1.25rem;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #000;
+}
+
+.project-video iframe,
+.project-video video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+/* ── Publications page ────────────────────────────────────────── */
+
+.section-heading {
+  font-size: 1.2rem;
+  margin: 0 0 1.25rem;
+}
+
+.section-heading + .publication-list {
+  margin-bottom: 3rem;
+}
+
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.publication-entry {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1.75rem;
+}
+
+.publication-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.publication-title {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+}
+
+.publication-meta {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.publication-links {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+}
+
+/* ── Contact page ─────────────────────────────────────────────── */
+
+.contact-info p {
+  margin: 0 0 1rem;
+}
+
+.contact-affiliations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.contact-institution {
+  margin: 0 0 0.25rem;
+}
+
+.contact-address {
+  line-height: 1.5;
+}
+
+.contact-affiliation .contact-address {
+  margin-bottom: 0;
+}
+
+.contact-links {
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* ── Mobile ───────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .site-header .wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* The hero's fixed square aspect-ratio doesn't leave enough room
+     for its content on narrow screens (it would get clipped by
+     overflow: hidden), so let it size to its content here instead. */
+  .hero {
+    aspect-ratio: unset;
+  }
+}

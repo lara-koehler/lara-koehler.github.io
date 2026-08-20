@@ -1,0 +1,29 @@
+{% assign home = site.data.home %}
+<section class="hero">
+  <div class="hero-bg"
+       style="background-image: url('{{ '/assets/images/' | append: home.background.image | relative_url }}'); opacity: {{ home.background.opacity }};">
+  </div>
+
+  <div class="hero-content wrap">
+    {% if home.photo %}
+    <img class="profile-photo"
+         src="{{ '/assets/images/' | append: home.photo | relative_url }}"
+         alt="{{ home.name }}">
+    {% endif %}
+
+    <h1>{{ home.name }}</h1>
+    <p class="tagline">{{ home.tagline }}</p>
+
+    <div class="bio">
+      {{ home.bio | markdownify }}
+    </div>
+
+    {% if home.links %}
+    <ul class="social-links">
+      {% for link in home.links %}
+      <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</section>
