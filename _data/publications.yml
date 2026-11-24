@@ -4,6 +4,17 @@
 # order here doesn't matter.
 # See CONTENT_GUIDE.md for full instructions.
 
+- title: "Transient contacts between filaments impart its elasticity to branched actin"
+  authors: "Mehdi Bouzid, Cesar Valencia Gallardo, Magdalena Kopec, Lara Koehler, Giuseppe Foffi, Olivia du Roure, Julien Heuvingh, Martin Lenz"
+  venue: "Nature"
+  year: 2026
+  links:
+    - label: "PDF"
+      url: "https://arxiv.org/abs/2409.00549"
+    - label: "DOI"
+      url: "https://www.nature.com/articles/s41586-026-11300-1"
+
+
 - title: "How Do Particles with Complex Interactions Self-Assemble?"
   authors: "Lara Koehler, Pierre Ronceray, Martin Lenz"
   venue: "Phys. Rev. X"
@@ -25,9 +36,6 @@
       url: "https://doi.org/10.1364/OE.26.034965"
 
 
-
-
-
 # type: preprint puts an entry in the "Preprints" section instead of
 # "Publications" — leave `type` out entirely for a normal publication.
 - title: "Flow-wave coupling synchronizes oscillations in growing active matter"
@@ -41,7 +49,7 @@
 
 
 - title: "Passive memory reshapes active persistence"
-  authors: "Lara Koehler*, Ivan Di Terlizzi*, John D. Treado*"
+  authors: "Ivan Di Terlizzi*, Lara Koehler*, John D. Treado*"
   venue: "arXiv"
   year: 2026
   type: preprint
@@ -61,12 +69,4 @@
 
 
 
-- title: "Transient contacts between filaments impart its elasticity to branched actin"
-  authors: "Mehdi Bouzid, Cesar Valencia Gallardo, Magdalena Kopec, Lara Koehler, Giuseppe Foffi, Olivia du Roure, Julien Heuvingh, Martin Lenz"
-  venue: "arXiv"
-  year: 2024
-  type: preprint
-  links:
-    - label: "arXiv"
-      url: "https://arxiv.org/abs/2409.00549"
 
